@@ -1,0 +1,127 @@
+{
+  "windows": [
+    {
+      "day": 1,
+      "cabinet": "A",
+      "state": "open",
+      "request_log": true
+    },
+    {
+      "day": 2,
+      "cabinet": "A",
+      "state": "open",
+      "request_log": false
+    },
+    {
+      "day": 1,
+      "cabinet": "B",
+      "state": "open",
+      "request_log": true
+    },
+    {
+      "day": 2,
+      "cabinet": "B",
+      "state": "counting",
+      "request_log": false
+    }
+  ],
+  "inventory": [
+    {
+      "day": 1,
+      "cabinet": "A",
+      "item": "story",
+      "copies": 2
+    },
+    {
+      "day": 1,
+      "cabinet": "A",
+      "item": "atlas",
+      "copies": 1
+    },
+    {
+      "day": 2,
+      "cabinet": "A",
+      "item": "story",
+      "copies": 0
+    },
+    {
+      "day": 1,
+      "cabinet": "B",
+      "item": "story",
+      "copies": 2
+    },
+    {
+      "day": 2,
+      "cabinet": "B",
+      "item": "story",
+      "copies": 3
+    }
+  ],
+  "requests": [
+    {
+      "ticket": "X",
+      "day": 1,
+      "cabinet": "A",
+      "minute": 12,
+      "requested": "story",
+      "loaned": "atlas",
+      "channel": "柜机"
+    },
+    {
+      "ticket": "X",
+      "day": 1,
+      "cabinet": "A",
+      "minute": 12,
+      "requested": "story",
+      "loaned": "atlas",
+      "channel": "网页"
+    },
+    {
+      "ticket": "Y",
+      "day": 1,
+      "cabinet": "A",
+      "minute": 12,
+      "requested": "story",
+      "loaned": null,
+      "channel": "柜机"
+    }
+  ],
+  "restocks": [
+    {
+      "day": 1,
+      "cabinet": "A",
+      "item": "atlas",
+      "minute": 20,
+      "delta": 1
+    }
+  ],
+  "shipping": [
+    {
+      "id": "S1",
+      "origin": "B",
+      "destination": "A",
+      "depart": 2,
+      "arrive": 3
+    }
+  ],
+  "returns": [
+    {
+      "cabinet": "B",
+      "item": "story",
+      "day": 3,
+      "copies": 1
+    }
+  ],
+  "transfers": [
+    {
+      "id": "T1",
+      "route": "S1",
+      "item": "story",
+      "copies": 1,
+      "status": "confirmed"
+    }
+  ],
+  "floors": {
+    "B": 2
+  }
+}
